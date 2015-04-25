@@ -20,18 +20,19 @@ SET time_zone = "+00:00";
 CREATE TABLE IF NOT EXISTS `employee` (
   `id` int(10) NOT NULL DEFAULT '0',
   `first_Name` varchar(30) NOT NULL,
-  `Last_Name` varchar(30) NOT NULL
+  `Last_Name` varchar(30) NOT NULL,
+  `jefe` varchar(60) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `employee`
 --
 
-INSERT INTO `employee` (`id`, `first_Name`, `Last_Name`) VALUES
-(1, 'romero', 'cenon'),
-(2, 'luna', 'nuñes'),
-(3, 'fentanes', 'delfin'),
-(4, 'espindola', 'antonio');
+INSERT INTO `employee` (`id`, `first_Name`, `Last_Name`, `jefe`) VALUES
+(1, 'romero', 'cenon', 'luna nuñes'),
+(2, 'luna', 'nuñes', 'fentanes delfin'),
+(3, 'fentanes', 'delfin', 'espindola antonio'),
+(4, 'espindola', 'antonio', NULL);
 
 -- --------------------------------------------------------
 
