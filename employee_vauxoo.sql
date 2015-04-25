@@ -57,6 +57,32 @@ INSERT INTO `employee_departament` (`id`, `name`, `description`) VALUES
 (NULL, 'division de estudios', 'control de alumnos'),
 (NULL, 'escolares', 'administracion de materias');
 
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `employee_hobby`
+--
+
+CREATE TABLE IF NOT EXISTS `employee_hobby` (
+  `id` int(10) DEFAULT NULL,
+  `name` varchar(40) NOT NULL,
+  `description` varchar(40) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `employee_hobby`
+--
+
+INSERT INTO `employee_hobby` (`id`, `name`, `description`) VALUES
+(1, 'deportes', 'jugar futbol'),
+(1, 'musica', 'escuchar bachata'),
+(2, 'video juegos', 'jugar mario bross'),
+(2, 'musica', 'escuchar bachata'),
+(3, 'deportes', 'jugar futbol'),
+(3, 'musica', 'escuchar bachata'),
+(4, 'juegos', 'jugar mario bross'),
+(4, 'deporte', 'jugar futbol');
+
 --
 -- Índices para tablas volcadas
 --
